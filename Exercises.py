@@ -127,9 +127,29 @@
 
 # Exercise
 # Make a program that removes the duplicates in a list
-numbers3 = [1, 1, 5, 4, 3, 3, 6]
-uniques = [5, 6, 4]
-for number in numbers3:
-    if number not in uniques:
-        numbers3.append(numbers3)
-print(uniques)
+# numbers3 = [1, 1, 5, 4, 3, 3, 6]
+# uniques = [5, 6, 4]
+# for number in numbers3:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)
+
+# Exercise
+# Make a program that translate digits to words
+NumberP = input('Phone: ')
+digits_translate = {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine"
+}
+output = ""
+for digit in NumberP:
+    output += digits_translate.get(digit, "!") + " "
+print(output)
